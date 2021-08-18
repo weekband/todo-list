@@ -15,6 +15,7 @@ let renderCurrentTime = () =>{
 }
 
 let renderUser = (event) =>{
+	event.preventDefault();
 	console.dir('renderUser : ' +event.target.className);
 	
 	let input = document.querySelector('.inp_username').value;
@@ -22,6 +23,7 @@ let renderUser = (event) =>{
 	convertMainDiv(input);
 }
 let registSchedule = (event) =>{
+	event.preventDefault();
 	console.dir('registSchedule : ' +event.target.className);
 	let prevTodo = localStorage.getItem('todo');
 	 
